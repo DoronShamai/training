@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+            id="session_menu_action"
+            name="Sessions"
+            parent="contacts.res_partner_menu_config"
+            sequence="20"
+            action="session_action1"
+    />
+</odoo>
