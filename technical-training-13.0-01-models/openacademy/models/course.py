@@ -7,5 +7,4 @@ class Course(models.Model):
 
     name = fields.Char(string='Title')
 
-    lecturer_ids = fields.Many2many('openacademy.partner', string="Lecturers")
-    student_ids = fields.Many2many('openacademy.partner', string='Students')
+    partner_ids = fields.Many2many('openacademy.partner', string="Lecturers")
