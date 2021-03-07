@@ -7,7 +7,7 @@ class Session(models.Model):
 
     name = fields.Char(string='Title')
     semester = fields.Selection([('semester A', 'Semester A'), ('semester B', 'Semester B')], default="semester A")
-    duration = fields.Integer(3)
+    duration = fields.Integer(default=3)
     
     start_time = fields.Datetime()
     start_date = fields.Date()
