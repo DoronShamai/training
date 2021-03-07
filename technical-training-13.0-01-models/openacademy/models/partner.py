@@ -10,4 +10,5 @@ class Partner(models.Model):
     email = fields.Char()
     address = fields.Text()
     partner_type = fields.Selection([('student', 'Student'), ('lecturer', 'Lecturer')], default="student")
+    session_id = fields.Many2one('openacademy.session', string="Session")
 
