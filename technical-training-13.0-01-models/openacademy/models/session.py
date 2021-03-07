@@ -12,5 +12,5 @@ class Session(models.Model):
     start_time = fields.Datetime()
     start_date = fields.Date()
     
-    lecturer_ids = fields.Oney2many('openacademy.partner', string="Lecturers")
+    lecturer_ids = fields.One2many('openacademy.partner', string="Lecturers")
     student_ids = fields.Many2one('openacademy.partner', string='Students')
